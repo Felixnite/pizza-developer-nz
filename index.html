@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pizza Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Pizza icon at the top -->
+        <div class="header-icon">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pizza"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z" /><path d="M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479" /><path d="M13 11.01v-.01" /><path d="M11 14v-.01" /></svg>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor"  strokelinecap="round" strokelinejoin="round" width={5} height={}  strokeWidth={2}> <path d="M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z"></path> <path d="M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479"></path> <path d="M13 11.01v-.01"></path> <path d="M11 14v-.01"></path> </svg>  -->
+        </div>
+
+        <h2 class="text-center">La Pizza Developer</h2>
+        <form id="pizzaForm" class="mt-4">
+            <div class="form-group">
+                <label for="size">Tamaño de la pizza:</label>
+                <select id="size" class="form-control" required>
+                    <option value="">Seleccione un tamaño</option>
+                    <option value="10">Pequeña (10cm)</option>
+                    <option value="14">Mediana (14cm)</option>
+                    <option value="16">Grande (16cm)</option>
+                </select>
+                <div class="invalid-feedback">Por favor, seleccione un tamaño.</div>
+            </div>
+            <div class="form-group">
+                <label>Ingredientes:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="mushrooms" value="mushrooms">
+                    <label class="form-check-label" for="mushrooms">Champiñones</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="ham" value="ham">
+                    <label class="form-check-label" for="ham">Jamón</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="olives" value="olives">
+                    <label class="form-check-label" for="olives">Aceitunas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="anchovies" value="anchovies">
+                    <label class="form-check-label" for="anchovies">Anchoas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sausage" value="sausage">
+                    <label class="form-check-label" for="sausage">Salchichón</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger btn-block">Calcular Costo</button>
+        </form>
+        <div id="result" class="mt-4">
+            <h3>Total Costo:</h3>
+            <p id="totalCost">$0.00</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+

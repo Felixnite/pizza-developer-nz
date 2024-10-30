@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    display: none;
+    color: #dc3545;
+}
+
+.is-invalid + .invalid-feedback {
+    display: block;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.header-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.pizza-icon {
+    width: 50px;
+    height: 50px;
+    color: #FF5733;
+}
+.text-center {
+    color: #FF5733;
+}
+.btn-primary {
+    background-color: #FF5733;
+    border-color: #FF5733;
+}
+.btn-primary:hover {
+    background-color: #FF7844;
+    border-color: #FF7844;
+}
+#result {
+    background-color: #ffedcc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #FF5733;
+}
